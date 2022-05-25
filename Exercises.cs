@@ -17,6 +17,11 @@ namespace template_csharp_loops
 
             // SOLUTION HERE
 
+            for (int i = 5; i > 0; i--)
+            {
+                Console.WriteLine(i);
+            }
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
@@ -32,6 +37,16 @@ namespace template_csharp_loops
 
             // SOLUTION HERE
 
+            Console.WriteLine("Please enter a number between 1 and 20");
+            string Count = Console.ReadLine();
+            int count = Convert.ToInt32(Count);
+
+            while (count >= 1)
+            {
+                Console.WriteLine(count);
+                count--;
+            }
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
@@ -44,6 +59,23 @@ namespace template_csharp_loops
             Console.WriteLine("PRINT THE SQUARE OF EVEN NUMBERS\n");
 
             // SOLUTION HERE
+
+            int num = 1;
+            
+
+            while (num <= 9)
+            {
+                int sqr = num * num;
+                if (num % 2 == 0)
+                {
+                    Console.WriteLine(sqr);
+                }
+                else
+                {
+                    Console.WriteLine(num);
+                }
+                num++;
+            }
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -64,6 +96,15 @@ namespace template_csharp_loops
             // This reads the user's input and converts it to an integer.
             // We'll assume that users can only input integers.
             // SOLUTION HERE
+
+            
+            while (userInput % 3 != 0)
+            {
+                    Console.WriteLine("Try again.");
+                userInput = Convert.ToInt32(Console.ReadLine());
+
+            }
+            Console.WriteLine("You Won!");
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
